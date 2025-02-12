@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widht, inital-scale=1.0">
+        <title>Imagen con filtro de Escala Gris</title>
+        <style>
+            .image-container {
+                width: 300px;
+                overflow: hidden;
+            }
+            .image-container img {
+                width: 100%;
+                transition: filter 0.3s ease;
+            }
+            .image-container img:hover {
+                filter: grayscale(100%);
+            }
+            </style>
+            </head>
+            <body>
+                <div class="image-container">
+                    <img src="Imagenes/example.jpg" alt="Imagen de ejemplo">
+                </div>
+            </body>
+            </html>
