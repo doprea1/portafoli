@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chat</title>
+        <style>
+            body {
+                font-family: 'Arial, sans-serif';
+                background-color: white;
+                margin: 0;
+                padding: 20px;
+            }
+            .contenido-chat {
+                max-width: 600px;
+                margin: auto;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                overflow-y: auto;
+                height: 400px;
+            }
+            .mensaje {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 15px;
+            }
+            .avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+                background-color: #3498db;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: bold;   
+            }
+            .contenido-mensaje {
+                background-color: white;
+                border-radius: 8px;
+                padding: 10px;
+                max-width: 80%;
+            }
+            .contenido-mensaje strong {
+                display: block;
+                color: #333;
+            }
+            .fecha {
+                font-size: 0.8em;
+                color: #888;
+            }
+            .usuario1 .contenido-mensaje {
+                background-color: #d1e7dd;
+            }
+            .usuario2 .contenido-mensaje {
+                background-color: #f8d7da;
+            }
+            </style>
+            </head>
+            <body>
+
+                <div class="contenido-chat">
+                    <div class="mensaje user1">
+                        <div class="avatar">A</div>
+                        <div class="contenido-mensaje">
+                            <strong>Usuario 1</strong>
+                            <span class="fecha">2025-01-12 10:00</span>
+                            ¡Hola, ¿Como estas?
+                        </div>
+                    </div>
+
+                    <div class="mensaje user2">
+                        <div class="avatar">B</div>
+                        <div class="contenido-mensaje">
+                            <strong>Usuario 2</strong>
+                            <span class="fecha">2025-01-12 10:01</span>
+                            ¡Hola! Estoy bien, gracias. ¿Y tu?
+                        </div>
+                    </div>
+                    
+                    <div class="mensaje user1">
+                        <div class="avatar">A</div>
+                        <div class="contenido-mensaje">
+                            <strong>Usuario 1</strong>
+                            <span class="fecha">2025-01-12 10:02</span>
+                            Tambien estoy bien. ¿Que has estado haciendo?
+                        </div>
+                    </div>
+
+                    <div class="mensaje user2">
+                        <div class="avatar">B</div>
+                        <div class="contenido-mensaje">
+                            <strong>Usuario 2</strong>
+                            <span class="fecha">2025-01-12 10:03</span>
+                            He estado trabajando en un proyecto nuevo
+                        </div>
+                    </div>
+
+                    <div class="mensaje user1">
+                        <div class="avatar">A</div>
+                        <div class="contenido-mensaje">
+                            <strong>Usuario 1</strong>
+                            <span class="fecha">2025-01-12 10:04</span>
+                            ¡Eso suena interesante! ¿De que se trata?
+                        </div>
+                    </div>
+                </div>
+            </body>
+            </html>
