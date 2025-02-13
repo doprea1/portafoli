@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widht, inital-scale=1.0">
+        <title>Boton Rotatorio</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f0f0f0;
+            }
+
+            .modal {
+                width: 300px;
+                height: 200px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.3s ease;
+                position: relative;
+                display: none;
+            }
+
+            .modal:hover {
+                transform: scale(2);
+                z-index: 10;
+            }
+
+            button {
+                margin-top: 20px;
+            }
+            </style>
+            </head>
+            <body>
+                <div class="modal" id="modal">
+                    <h2>Este es un Modal</h2>
+                    <p></p>
+                </div>
+            </body>
