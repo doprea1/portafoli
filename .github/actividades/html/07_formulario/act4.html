@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Busqueda de Camaras de Fotos</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
+            .form-container {
+                background: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgb(255, 2, 2);
+                max-width: 500px;
+                margin: auto;
+            }
+            h2 {
+                text-align: center;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input[type="text"],
+            input[type="number"],
+            select{
+               width: 95%;
+               padding: 10px;
+               border: 1px solid rgb(0, 0, 0);
+               border-radius: 4px;
+            }
+            button {
+                background-color: #007bff;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%;
+            }
+            button:hover {
+                background-color: blue;
+            }
+            </style>
+            </head>
+            <body>
+                <div class="form-container">
+                    <h2>Busqueda de Camara de Fotos</h2>
+                    <form method="get">
+                        <div class="form-group">
+                            <label for="tipo-camara">Tipo de Camara</label>
+                            <select id="tipo-camara" name="tipo-camara">
+                                <option value="">Selecciona un tipo:</option>
+                                <option value="digital">Camara Digital</option>
+                                <option value="dslr">Camara DSLR</option>
+                                <option value="mirrorless">Camara sin Espejo</option>
+                                <option value="compacta">Camara Compacta</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="marca">Marca</label>
+                            <input type="text" id="marca" name="marca" placeholder="Ej. Canon, Nikon">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="precio-min">Precio Minimo (€)</label>
+                            <input type="number" id="precio-min" name="precio-min" min="0" placeholder="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="precio-max">Precio Maximo (€)</label>
+                            <input type="number" id="precio-max" name="precio-max" min="0" placeholder="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="caracteristicas">Caracteristicas Especificas</label>
+                            <input type="text" id="caracteristicas" name="caracteristicas" placeholder="Ej. 4K, WiFi">
+                        </div>
+                        <button type="submit">Buscar Camara</button>
+                    </form>
+                </div>
+            </body>
+            </html>
+            
