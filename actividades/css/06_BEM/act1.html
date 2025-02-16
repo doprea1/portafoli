@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta narme="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: #f8f8f8;
+                border-bottom: 1px solid #ccc;
+           }
+           .logo img {
+            height: 50px;
+           }
+           
+           nav {
+            flex-grow: 1;
+            margin: 0 20px;
+           }
+
+           nav ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+           }
+
+           nav ul li {
+            margin: 0 15px;
+           }
+
+           nav ul li a {
+            text-decoration: none;
+            color: #333;
+           }
+
+           .search-form {
+            display: flex;
+           }
+
+           .search-form input [type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+           }
+
+           .search-form input [type="submit"] {
+            padding: 5px 10px;
+            border: none;
+            background-color: #007bbf;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+           }
+        </style>    
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/actividades/css/06_BEM/imagenes/logo.png" alt="Logo Empresa">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="sheach-form">
+                <form method="get">
+                    <input type="text" name="query" placeholder="Buscar...">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+        </header>
+    </body>
+</html>
