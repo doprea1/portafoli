@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta narme="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema de Comentarios</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+
+            .comment-section {
+                border: 1px solid #ccc;
+                padding: 20px;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+
+            .comment {
+                border-bottom: 1px solid #ddd;
+                padding: 10px 0;
+            }
+
+            .comment:last-child {
+                border-bottom: none;
+            }
+
+            .comment-author {
+                font-weight: bold;
+            }
+
+            .comment-data {
+                font-size: 0.9em;
+                color: #777;
+            }
+
+            .comment-form {
+                margin-top: 20px;
+            }
+
+            .comment-form input[type="text"],
+            .comment-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .comment-form input[type="submit"] {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            </style>
+            </head>
+            <body>
+                <h1>Sistema de Comentarios</h1>
+
+                <div class="comment-section">
+                    <h2>Comentarios</h2>
+
+                    <div class="comment">
+                        <div class="comment-author">Juan Perez</div>
+                        <div class="comment-data">2023-10-01</div>
+                        <div class="comment-text">¡Este es un ejemplo de comentario!</div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-author">Maria Lopez</div>
+                        <div class="comment-data">2023-10-02</div>
+                        <div class="comment-text">Me gusta mucho este articulo</div>
+                    </div>
+
+                    <div class="comment-form">
+                        <h3>Deja un comentario</h3>
+                        <form method="get">
+                            <input type="text" name="author" placeholder="Tu nombre" required>
+                            <textarea name="comment" rows="4" placeholder="Escribe tu comentario aqui..." required></textarea>
+                            <input type="submit" value="Enviar Comentario">
+                            </form>
+                    </div>
+                </div>
+            </body>
+            </html>
