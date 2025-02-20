@@ -281,7 +281,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     width: 300px;
-    margin-top: 1ps;
+    margin-top: 1px;
 }
 
 .social-networks i {
