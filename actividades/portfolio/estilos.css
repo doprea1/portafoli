@@ -77,7 +77,7 @@ h1 {
 }
 
 .info-content span {
-    color: aqua;
+    color: rgb(255, 0, 0);
 }
 
 .download-cv {
@@ -139,7 +139,7 @@ h1 {
 .portfolio,
 .contact-section {
     width: 100vw;
-    background-color: #191c32;
+    background-color: #0d144c;
     color: #fff;
 }
 
@@ -290,7 +290,7 @@ h1 {
 
 .activities {
     padding: 3em;
-    background-color: #191c32;
+    background-color: #0d144c;
     color: #fff;
 }
 
@@ -315,3 +315,4 @@ h1 {
 .activities-list a:hover {
     text-decoration: underline;
 }
+
